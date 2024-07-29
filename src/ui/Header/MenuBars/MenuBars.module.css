@@ -1,0 +1,46 @@
+.menu-bars:hover {
+  cursor: pointer;
+}
+
+.menu-bars.active path:nth-child(1) {
+  animation: slide-up 0.5s linear forwards;
+}
+
+.menu-bars.active path:nth-child(2) {
+  transition-delay: 0.25s;
+  display: none;
+}
+
+.menu-bars.active path:nth-child(3) {
+  animation: slide-down 0.5s linear forwards;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-24%);
+  }
+  60% {
+    transform: translateY(-24%);
+  }
+  100% {
+    transform: rotate(-45deg) translate(-50%, 0);
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 24%);
+  }
+  60% {
+    transform: translate(0, 24%);
+  }
+  100% {
+    transform: rotate(45deg) translate(24%, -24%);
+  }
+}

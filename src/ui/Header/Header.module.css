@@ -1,0 +1,13 @@
+.header {
+  transform: translateY(-78px);
+  animation: header-animation 0.5s linear 8.2s forwards;
+}
+
+@keyframes header-animation {
+  0% {
+    transform: translateY(-78px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
