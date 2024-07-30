@@ -16,7 +16,7 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        "flex items-center justify-between fixed w-screen top-0 left-0 p-4 bg-white",
+        "flex items-center justify-between fixed w-screen top-0 left-0 p-4 bg-white z-[1000]",
         styles["header"]
       )}
     >
@@ -36,9 +36,15 @@ const Header = () => {
         onClick={() => setMenuOpened((old) => !old)}
       />
       <ul
+        style={{
+          opacity: menuOpened ? 0 : 1,
+          animation: menuOpened ? "appear 0.2s linear 0.5s forwards" : "",
+        }}
         className={`${
-          menuOpened ? "flex right-4 top-[75px] flex-col absolute" : "hidden"
-        } gap-4 sm:flex sm:flex-row sm:items-center sm:static`}
+          menuOpened
+            ? "flex right-4 top-[90px] flex-col absolute p-4"
+            : "hidden"
+        } bg-white rounded-lg gap-4 sm:flex sm:flex-row sm:items-center sm:static`}
       >
         {navLinks.map((ele) => (
           <li key={ele[1]} className="font-semibold hover:text-indigo-600">
