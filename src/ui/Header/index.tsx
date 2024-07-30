@@ -6,7 +6,7 @@ import MenuBars from "./MenuBars";
 import styles from "./Header.module.css";
 import clsx from "clsx";
 const navLinks = [
-  ["/", "Home"],
+  ["/#home", "Home"],
   ["/#about", "About"],
   ["/#projects", "Projects"],
   ["/#contact", "Contact"],

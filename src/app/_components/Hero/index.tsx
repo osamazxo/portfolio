@@ -6,6 +6,7 @@ const Hero = () => {
   return (
     <div
       className=" min-h-screen pt-[80px] px-4 flex flex-col justify-center  text-center"
+      id="home"
       style={{
         backgroundImage:
           "linear-gradient(to right, rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)), url(/images/bg.svg)",
