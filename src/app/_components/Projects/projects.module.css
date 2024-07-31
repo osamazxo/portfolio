@@ -1,0 +1,10 @@
+.project-card:hover .details {
+  opacity: 1;
+  visibility: visible;
+}
+.project-card:hover img {
+  transform: scale(1.1);
+}
+.details {
+  transition: 0.4s linear;
+}
