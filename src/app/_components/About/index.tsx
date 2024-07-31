@@ -39,7 +39,7 @@ const About = () => {
             {skills.map((skill) => (
               <li
                 key={skill}
-                className="px-2 py-1 bg-[#d5d5d5] text-gray-600 rounded-lg font-medium select-none text-nowrap"
+                className="min-w-fit px-2 py-1 bg-[#d5d5d5] text-gray-600 rounded-lg font-medium select-none text-nowrap"
               >
                 {skill}
               </li>

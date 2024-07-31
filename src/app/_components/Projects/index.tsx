@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./projects.module.css";
 import eduvation from "@/assets/eduvation/cover.png";
+import safetySphere from "@/assets/safety_sphere/cover.png";
 import tripma from "@/assets/tripma/cover.png";
 import kasper from "@/assets/kasper/cover.png";
 import wooster from "@/assets/wooster/cover.png";
@@ -21,7 +22,7 @@ const projects = [
     id: "p10002",
     title: "Safety Sphere",
     description: "Smart Emergency Alert and Prevention System",
-    img: "",
+    img: safetySphere,
   },
   {
     id: "p10003",
@@ -53,7 +54,7 @@ const Projects = () => {
     <div id="projects" className="py-10 px-4 bg-[#faf8f8]">
       <div className="container text-center">
         <h2 className="text-3xl font-bold mb-2">Projects</h2>
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-8">
           Here are some of the projects, I have worked on
         </p>
         <ul className="grid grid-cols-12 gap-4">
@@ -61,7 +62,7 @@ const Projects = () => {
             <li
               key={project.title}
               className={clsx(
-                "col-span-12 md:col-span-6 lg:col-span-4 rounded-md overflow-hidden relative",
+                "col-span-12 md:col-span-6 lg:col-span-4 rounded-lg overflow-hidden relative",
                 styles["project-card"]
               )}
             >
