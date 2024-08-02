@@ -47,6 +47,7 @@ const Hero = () => {
       <Link
         href="#projects"
         className="size-fit mx-auto"
+        id="skip"
         style={{
           opacity: 0,
           visibility: "hidden",

@@ -12,40 +12,42 @@ import Link from "next/link";
 import clsx from "clsx";
 const projects = [
   {
-    id: "p10001",
+    id: "eduvation",
     title: "Eduvation",
     description:
       "Learning hub that includes recorded courses, live workshops and focus groups",
     img: eduvation,
   },
   {
-    id: "p10002",
+    id: "safety-sphere",
     title: "Safety Sphere",
     description: "Smart Emergency Alert and Prevention System",
     img: safetySphere,
   },
   {
-    id: "p10003",
+    id: "tripma",
     title: "Tripma",
     description: "Flight booking website built on React TS and SCSS",
     img: tripma,
   },
   {
-    id: "p10004",
+    id: "domino",
     title: "Domino",
-    description: "",
+    description: "Domino game built on native javascript",
     img: domino,
   },
   {
-    id: "p10005",
+    id: "kasper",
     title: "Kasper",
-    description: "",
+    description:
+      "One page template great for portfolio, agency or any other web page",
     img: kasper,
   },
   {
-    id: "p10006",
+    id: "wooster",
     title: "Wooster",
-    description: "",
+    description:
+      "Wooster template provides a modern design for showcasing portfolios and professional services",
     img: wooster,
   },
 ];
